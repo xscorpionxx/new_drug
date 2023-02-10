@@ -1,18 +1,16 @@
 from fastapi import FastAPI
-from selenium import webdriver
-from fastapi.middleware.cors import CORSMiddleware
-from selenium.webdriver.common.by import By
-import time
-from googletrans import Translator
-from pydantic import BaseModel
-from selenium.webdriver.support import expected_conditions as EC
-import os
+# from selenium import webdriver
+# from fastapi.middleware.cors import CORSMiddleware
+# from selenium.webdriver.common.by import By
+# import time
+# from googletrans import Translator
+# from pydantic import BaseModel
 app = FastAPI()
  
 
 @app.get("/")
 def root_():
-    global driver
+    #global driver
     # chrome_options = webdriver.ChromeOptions()
     # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
     # chrome_options.add_argument("--headless")
