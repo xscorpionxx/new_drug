@@ -10,7 +10,7 @@ app = FastAPI()
  
 
 @app.get("/")
-def root_():
+def hello_world():
     #global driver
     # chrome_options = webdriver.ChromeOptions()
     # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
