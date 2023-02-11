@@ -5,6 +5,7 @@ from fastapi import FastAPI
 # import time
 # from googletrans import Translator
 # from pydantic import BaseModel
+
 app = FastAPI()
  
 
@@ -19,7 +20,8 @@ def root_():
     # driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
     # driver.get('https://www.drugs.com/drug_interactions.html')
     return {"message": "Hello__________"}
-
+if __name__ == '__main__' : 
+    app.run()
 # class drugs(BaseModel):
 #      drug1: str
 #      drug2: str
